@@ -1,6 +1,6 @@
 import myAlert from "~/myAlert"
 function Button() {
-    return <Button onClick={myAlert}>Click me!</Button>
+    return <button onClick={myAlert}>Click me!</button>
 }
 
 export default Button
