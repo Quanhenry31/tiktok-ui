@@ -8,6 +8,7 @@ const publicRoutes = [
   { path: '/following', component: Following },
   { path: '/profile', component: Profile },
   { path: '/upload', component: Upload, layout: null },
+  // { path: '/upload', component: Upload, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];
