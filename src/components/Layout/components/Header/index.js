@@ -9,9 +9,7 @@ function Header() {
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        <div className={cx('logo')}>
-          <img src={images.logo} alt="logo" />
-        </div>
+        <img src={images.logo} alt="logo" />
         {/* seach */}
         <div className={cx('search')}>
           <input placeholder="Seach accounts and videos" spellCheck="false"></input>
