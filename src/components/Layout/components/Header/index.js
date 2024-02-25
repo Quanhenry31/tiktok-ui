@@ -7,6 +7,7 @@ import images from '~/assets/images';
 import Tippy from '@tippyjs/react/headless';
 // import 'tippy.js/dist/tippy.css'; // optional
 import { Wapper as PopperWrapper } from '~/components/Popper';
+import AccountItem from '~/components/AccountItem';
 
 const cx = classNames.bind(styles);
 
@@ -28,11 +29,15 @@ function Header() {
           interactive
           visible={searchResult.length > 0}
           render={(attrs) => (
-            <PopperWrapper>
-              <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                Ket qua
-              </div>
-            </PopperWrapper>
+            <div className={cx('search-result')} tabIndex="-1" {...attrs}>
+              <PopperWrapper>
+                <h4 className={cx('search-title')}>Accounts</h4>
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+              </PopperWrapper>
+            </div>
           )}
         >
           <div className={cx('search')}>
