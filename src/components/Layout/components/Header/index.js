@@ -1,8 +1,16 @@
 import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faMagnifyingGlass, faSignIn, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import styles from './Header.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faCircleQuestion,
+  faCircleXmark,
+  faEarthAsia,
+  faEllipsisVertical,
+  faKeyboard,
+  faMagnifyingGlass,
+  faSpinner,
+} from '@fortawesome/free-solid-svg-icons';
 import images from '~/assets/images';
 import Tippy from '@tippyjs/react/headless';
 // import 'tippy.js/dist/tippy.css'; // optional
@@ -10,22 +18,39 @@ import Tippy from '@tippyjs/react/headless';
 import Button from '~/components/Button';
 import { Wapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
+import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
+
+const MENU_ITEMS = [
+  {
+    icon: <FontAwesomeIcon icon={faEarthAsia}></FontAwesomeIcon>,
+    title: 'English',
+  },
+  {
+    icon: <FontAwesomeIcon icon={faCircleQuestion}></FontAwesomeIcon>,
+    title: 'Feedback and Help',
+    to: './feedback',
+  },
+  {
+    icon: <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>,
+    title: 'Keyboard shortcuts',
+  },
+];
 
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
-      setSearchResult([1, 2, 3]);
+      setSearchResult([]);
     }, 0);
-  });
+  }, []);
 
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        <img src={images.logo} alt="logo" />
+        <img src={images.logo} alt="Tiktok" />
         {/* seach */}
         <Tippy
           interactive
@@ -56,9 +81,13 @@ function Header() {
         </Tippy>
         <div className={cx('actions')}>
           <Button text>Up load</Button>
-          <Button primary leftIcon={<FontAwesomeIcon icon={faSignIn} />}>
-            Log in
-          </Button>
+          <Button primary>Log in</Button>
+
+          <Menu items={MENU_ITEMS}>
+            <button className={cx('more-btn')}>
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          </Menu>
         </div>
       </div>
     </header>
