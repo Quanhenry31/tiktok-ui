@@ -1,6 +1,6 @@
 @import 'normalize.css';
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --primary: #fe2c55;
@@ -10,6 +10,7 @@
   //defaulayout
   --default-layout-header-height: 60px;
   --default-layout-with: 1150px;
+  --default-layout-horizontal-spacer: 24px;
 }
 
 * {
@@ -41,4 +42,21 @@ input,
 a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+// Custom tippy tolltip
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-style: 1.6rem;
+    line-height: 2.2rem;
+    background-color: rgba(84, 84, 84, 0.92);
+  }
+  .tippy-arrow {
+    color: rgba(84, 84, 84, 0.92);
+  }
+  .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+    top: -8px;
+  }
 }

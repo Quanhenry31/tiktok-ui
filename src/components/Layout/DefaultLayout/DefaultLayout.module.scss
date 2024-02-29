@@ -7,6 +7,8 @@
   //   min-height: 1000px;
   //   background-color: #333;
   width: var(--default-layout-with);
+  padding: 0 var(--default-layout-horizontal-spacer);
+
   display: flex;
 }
 .content {

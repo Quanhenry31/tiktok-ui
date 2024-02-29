@@ -14,6 +14,7 @@
   // background-color: #ccc;
   height: 100%;
   width: var(--default-layout-with);
+  padding: 0 var(--default-layout-horizontal-spacer);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,14 +100,41 @@
     background-color: rgba(22, 24, 35, 0.06);
   }
 }
+
+// actions
+.actions {
+  display: flex;
+  align-items: center;
+}
+
 .more-btn {
   font-size: 2rem;
   margin-left: 28px;
   padding: 4px 8px;
   background: transparent;
+  cursor: pointer;
 }
 
-//Menu
+// Menu
 .menu-items {
   width: 240px;
+}
+
+.action-btn {
+  position: relative;
+  display: flex;
+  font-size: 2.2rem;
+  color: #161823;
+  background-color: transparent;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 14px;
+  cursor: pointer;
 }
