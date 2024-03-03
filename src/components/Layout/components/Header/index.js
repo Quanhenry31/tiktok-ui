@@ -14,8 +14,10 @@ import images from '~/assets/images';
 
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
 // import 'tippy.js/dist/tippy.css'; // optional
 
+import routesConfig from '~/config/route';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
@@ -97,24 +99,35 @@ function Header() {
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        <img src={images.logo} alt="Tiktok" />
+        <Link to={routesConfig.home} className={cx('logo-link')}>
+          <img src={images.logo} alt="Tiktok" />
+        </Link>
         {/* seach */}
         <Seach />
 
         <div className={cx('actions')}>
           {currentUser ? (
             <>
-              <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
+              <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
                 <button className={cx('action-btn')}>
                   <UploadIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={[0, 50]} content="Message" placement="bottom">
+                <button className={cx('action-btn')}>
                   <MessageIcon />
+                </button>
+              </Tippy>
+              <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
+                <button className={cx('action-btn')}>
                   <InboxIcon />
+                  <span className={cx('badge')}>12</span>
                 </button>
               </Tippy>
             </>
           ) : (
             <>
-              <Button text>Up load</Button>
+              <Button text>Upload</Button>
               <Button primary>Log in</Button>
             </>
           )}

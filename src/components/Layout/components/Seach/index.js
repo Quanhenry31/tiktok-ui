@@ -14,6 +14,7 @@ import styles from './Seach.module.scss';
 const cx = classNames.bind(styles);
 
 function Seach() {
+  //lay du lieu ra // so sanh va dua dl vao
   const [searchValue, setSearchValue] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const [showResult, setShowResult] = useState(true);
@@ -49,6 +50,13 @@ function Seach() {
   const handleHideResult = () => {
     setShowResult(false);
   };
+
+  const handleChange = (e) => {
+    const searchValue = e.target.value;
+    if (!searchValue.startsWith(' ')) {
+      setSearchValue(searchValue);
+    }
+  };
   return (
     <HeadlessTippy
       interactive
@@ -71,7 +79,7 @@ function Seach() {
           value={searchValue}
           placeholder="Seach accounts and videos"
           spellCheck={false}
-          onChange={(e) => setSearchValue(e.target.value)}
+          onChange={handleChange}
           onFocus={() => setShowResult(true)}
         ></input>
         {!!searchValue && !loading && (
@@ -81,7 +89,7 @@ function Seach() {
         )}
         {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
 
-        <button className={cx('search-btn')}>
+        <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
           <SearchIcon />
         </button>
       </div>
