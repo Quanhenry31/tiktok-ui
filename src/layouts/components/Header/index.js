@@ -17,7 +17,7 @@ import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
 // import 'tippy.js/dist/tippy.css'; // optional
 
-import routesConfig from '~/config/route';
+import config from '~/config';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
@@ -99,7 +99,7 @@ function Header() {
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        <Link to={routesConfig.home} className={cx('logo-link')}>
+        <Link to={config.routes.home} className={cx('logo-link')}>
           <img src={images.logo} alt="Tiktok" />
         </Link>
         {/* seach */}
