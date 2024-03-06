@@ -23,7 +23,7 @@ import Menu from '~/components/Popper/Menu';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
-import Seach from '../Seach';
+import Search from '../Search';
 
 const cx = classNames.bind(styles);
 
@@ -103,7 +103,7 @@ function Header() {
           <img src={images.logo} alt="Tiktok" />
         </Link>
         {/* seach */}
-        <Seach />
+        <Search />
 
         <div className={cx('actions')}>
           {currentUser ? (

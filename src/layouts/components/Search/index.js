@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
-import * as seachSevices from '~/services/seachSevice';
-import { Wapper as PopperWrapper } from '~/components/Popper';
+import * as searchService from '~/services/searchService';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
 import { useDebounce } from '~/hooks';
-import styles from './Seach.module.scss';
+import styles from './Search.module.scss';
 
 const cx = classNames.bind(styles);
 
@@ -33,7 +33,7 @@ function Seach() {
     const fetchApi = async () => {
       setloading(true);
 
-      const result = await seachSevices.search(debounced);
+      const result = await searchService.search(debounced);
       setSearchResult(result);
 
       setloading(false);

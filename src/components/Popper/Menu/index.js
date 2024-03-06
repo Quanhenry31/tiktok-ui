@@ -1,6 +1,6 @@
 import Tippy from '@tippyjs/react/headless';
 
-import { Wapper as PopperWrapper } from '~/components/Popper';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import MenuItem from './MenuItem';
 import Header from './Header';
 
