@@ -177,3 +177,384 @@ export const LiveActiveIcon = ({ width = '3.2rem', height = '3.2rem', className 
     ></path>
   </svg>
 );
+export const ProductIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    viewBox="0 0 26 26"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <title />{' '}
+      <g fill="none" fillRule="evenodd" id="页面-1" stroke="none" strokeWidth={1}>
+        {' '}
+        <g id="导航图标" transform="translate(-325.000000, -80.000000)">
+          {' '}
+          <g id="编组" transform="translate(325.000000, 80.000000)">
+            {' '}
+            <polygon fill="#FFFFFF" fillOpacity="0.01" fillRule="nonzero" id="路径" points="24 0 0 0 0 24 24 24" />{' '}
+            <polygon
+              id="路径"
+              points="22 7 12 2 2 7 2 17 12 22 22 17"
+              stroke="#212121"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+            />{' '}
+            <line
+              id="路径"
+              stroke="#212121"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={2}
+              x2={12}
+              y1={7}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#212121"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={12}
+              x2={12}
+              y1={22}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#212121"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={22}
+              x2={12}
+              y1={7}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#212121"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={17}
+              x2={7}
+              y1="4.5"
+              y2="9.5"
+            />{' '}
+          </g>{' '}
+        </g>{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);
+export const ProductActiveIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    viewBox="0 0 26 26"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <title />{' '}
+      <g fill="none" fillRule="evenodd" id="页面-1" stroke="none" strokeWidth={1}>
+        {' '}
+        <g id="导航图标" transform="translate(-325.000000, -80.000000)">
+          {' '}
+          <g id="编组" transform="translate(325.000000, 80.000000)">
+            {' '}
+            <polygon fill="#FFFFFF" fillOpacity="0.01" fillRule="nonzero" id="路径" points="24 0 0 0 0 24 24 24" />{' '}
+            <polygon
+              id="路径"
+              points="22 7 12 2 2 7 2 17 12 22 22 17"
+              stroke="#ff0000"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+            />{' '}
+            <line
+              id="路径"
+              stroke="#ff0000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={2}
+              x2={12}
+              y1={7}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#ff0000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={12}
+              x2={12}
+              y1={22}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#ff0000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={22}
+              x2={12}
+              y1={7}
+              y2={12}
+            />{' '}
+            <line
+              id="路径"
+              stroke="#ff0000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              x1={17}
+              x2={7}
+              y1="4.5"
+              y2="9.5"
+            />{' '}
+          </g>{' '}
+        </g>{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);
+
+export const BillIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    version="1.1"
+    id="_x32_"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512"
+    xmlSpace="preserve"
+    fill="currentColor"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      <g>
+        {' '}
+        <path
+          className="st0"
+          d="M494.422,238.219v-72.281c-0.016-34.063-23.641-62.5-55.422-70.063c-3.063-37-33.969-66.125-71.781-66.125 H108.156C53.984,29.766,9.297,69.594,1.406,121.547H0v16.359v42.125v194.063c0.016,59.75,48.422,108.156,108.156,108.156h314.125 c39.844,0,72.125-32.281,72.141-72.141v-45.672c10.141-2.891,17.563-12.109,17.578-23.156v-79.875 C511.984,250.344,504.563,241.125,494.422,238.219z M470.219,410.109c-0.016,13.266-5.344,25.172-14.047,33.891 c-8.703,8.688-20.609,14.031-33.891,14.031H108.156c-23.219,0-44.125-9.375-59.359-24.578 c-15.203-15.234-24.578-36.141-24.578-59.359V180.031v-41.156l0.203-4.688c1.953-44.625,38.641-80.25,83.734-80.219h259.063 c23.719-0.016,43.328,17.219,47.156,39.844H65.938c-6.688,0-12.125,5.406-12.125,12.094s5.438,12.109,12.125,12.109h357.828 l2.484,0.203c24.594,2.031,43.969,22.609,43.969,47.719v71.25H358.406c-17.688,0-33.766,7.203-45.344,18.781l-0.016,0.016 c-11.578,11.578-18.797,27.656-18.766,45.359c-0.031,17.688,7.188,33.75,18.781,45.344l0,0 c11.578,11.594,27.656,18.797,45.344,18.781h111.813V410.109z M487.781,341.266H358.406c-11.141-0.016-20.875-4.406-28.219-11.703 c-7.313-7.344-11.688-17.094-11.703-28.219c0.016-11.141,4.391-20.891,11.703-28.25l-0.094,0.094l0.078-0.094h0.016 c7.344-7.281,17.078-11.656,28.219-11.688h129.375V341.266z"
+        />{' '}
+        <path
+          className="st0"
+          d="M341.969,301.344c0,9.578,7.75,17.344,17.344,17.344c9.563,0,17.344-7.766,17.344-17.344 c0-9.594-7.781-17.359-17.344-17.359C349.719,283.984,341.969,291.75,341.969,301.344z"
+        />{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);
+
+export const BillActiveIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    version="1.1"
+    id="_x32_"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512"
+    xmlSpace="preserve"
+    fill="currentColor"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path
+        className="st0"
+        d="M494.422,238.219v-72.281c-0.016-34.063-23.641-62.5-55.422-70.063c-3.063-37-33.969-66.125-71.781-66.125 H108.156C53.984,29.766,9.297,69.594,1.406,121.547H0v16.359v42.125v194.063c0.016,59.75,48.422,108.156,108.156,108.156h314.125 c39.844,0,72.125-32.281,72.141-72.141v-45.672c10.141-2.891,17.563-12.109,17.578-23.156v-79.875 C511.984,250.344,504.563,241.125,494.422,238.219z M470.219,410.109c-0.016,13.266-5.344,25.172-14.047,33.891 c-8.703,8.688-20.609,14.031-33.891,14.031H108.156c-23.219,0-44.125-9.375-59.359-24.578 c-15.203-15.234-24.578-36.141-24.578-59.359V180.031v-41.156l0.203-4.688c1.953-44.625,38.641-80.25,83.734-80.219h259.063 c23.719-0.016,43.328,17.219,47.156,39.844H65.938c-6.688,0-12.125,5.406-12.125,12.094s5.438,12.109,12.125,12.109h357.828 l2.484,0.203c24.594,2.031,43.969,22.609,43.969,47.719v71.25H358.406c-17.688,0-33.766,7.203-45.344,18.781l-0.016,0.016 c-11.578,11.578-18.797,27.656-18.766,45.359c-0.031,17.688,7.188,33.75,18.781,45.344l0,0 c11.578,11.594,27.656,18.797,45.344,18.781h111.813V410.109z M487.781,341.266H358.406c-11.141-0.016-20.875-4.406-28.219-11.703 c-7.313-7.344-11.688-17.094-11.703-28.219c0.016-11.141,4.391-20.891,11.703-28.25l-0.094,0.094l0.078-0.094h0.016 c7.344-7.281,17.078-11.656,28.219-11.688h129.375V341.266z"
+      />{' '}
+      <path
+        className="st0"
+        d="M341.969,301.344c0,9.578,7.75,17.344,17.344,17.344c9.563,0,17.344-7.766,17.344-17.344 c0-9.594-7.781-17.359-17.344-17.359C349.719,283.984,341.969,291.75,341.969,301.344z"
+      />{' '}
+    </g>{' '}
+  </svg>
+);
+
+export const BillDetailIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill="currentColor"
+    version="1.1"
+    id="_x32_"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512"
+    xmlSpace="preserve"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <g>
+        {' '}
+        <path
+          className="st0"
+          d="M432,7.938H80c-44.172,0-80,35.813-80,80c0,44.172,35.828,80,80,80h24v-48c-17.641,0-32-14.359-32-32 c0-17.656,14.359-32,32-32h304c17.656,0,32,14.344,32,32c0,17.641-14.344,32-32,32v48h24c44.188,0,80-35.828,80-80 C512,43.75,476.188,7.938,432,7.938z"
+        />{' '}
+        <path
+          className="st0"
+          d="M120,504.063h272v-432H120V504.063z M152,147.25c23.453-2.344,42.297-20.219,46.188-43.188h115.656 c3.875,22.969,22.703,40.844,46.156,43.188v92.938c-20.375-30.016-59.25-50.313-104-50.313c-44.734,0-83.625,20.281-104,50.297 V147.25z M273.844,266.531v53.5l-15.969-3.313v-54.516c-0.906-0.063-1.844-0.109-2.75-0.109c-2.297,0-4.609,0.203-6.953,0.594 v52.063l-15.969-3.281v-42.563c-12.063,7.75-19.375,20.969-19.375,35.469c0,4.906,0.906,9.859,2.688,14.656l1.438,3.844h-22.469 l-0.563-2.109c-1.453-5.391-2.188-10.922-2.188-16.391c0-26.094,16.188-49.563,40.469-59.016v-13.5h15.969v9.578 c2.453-0.297,4.719-0.438,6.953-0.438c0.906,0,1.844,0.031,2.75,0.063v-9.203h15.969v12.047 c26.391,8.188,44.641,32.734,44.641,60.469c0,7.375-1.297,14.594-3.828,21.531l-0.828,2.297l-21.156-4.313l1.359-3.219 c2.219-5.266,3.344-10.75,3.344-16.297C297.375,288.344,288.078,273.625,273.844,266.531z M152,335.953 c20.375,30.016,59.266,50.297,104,50.297c44.75,0,83.625-20.281,104-50.313v92.906c-23.453,2.344-42.281,20.25-46.156,43.219 H198.172c-3.875-22.969-22.719-40.875-46.172-43.219V335.953z"
+        />{' '}
+        <circle className="st0" cx={256} cy="157.188" r="13.75" />{' '}
+        <circle className="st0" cx={256} cy="418.938" r="13.75" />{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);
+
+export const BillDetailActiveIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    version="1.1"
+    id="_x32_"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512"
+    xmlSpace="preserve"
+    fill="currentColor"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path
+        className="st0"
+        d="M432,7.938H80c-44.172,0-80,35.813-80,80c0,44.172,35.828,80,80,80h24v-48c-17.641,0-32-14.359-32-32 c0-17.656,14.359-32,32-32h304c17.656,0,32,14.344,32,32c0,17.641-14.344,32-32,32v48h24c44.188,0,80-35.828,80-80 C512,43.75,476.188,7.938,432,7.938z"
+      />{' '}
+      <path
+        className="st0"
+        d="M120,504.063h272v-432H120V504.063z M152,147.25c23.453-2.344,42.297-20.219,46.188-43.188h115.656 c3.875,22.969,22.703,40.844,46.156,43.188v92.938c-20.375-30.016-59.25-50.313-104-50.313c-44.734,0-83.625,20.281-104,50.297 V147.25z M273.844,266.531v53.5l-15.969-3.313v-54.516c-0.906-0.063-1.844-0.109-2.75-0.109c-2.297,0-4.609,0.203-6.953,0.594 v52.063l-15.969-3.281v-42.563c-12.063,7.75-19.375,20.969-19.375,35.469c0,4.906,0.906,9.859,2.688,14.656l1.438,3.844h-22.469 l-0.563-2.109c-1.453-5.391-2.188-10.922-2.188-16.391c0-26.094,16.188-49.563,40.469-59.016v-13.5h15.969v9.578 c2.453-0.297,4.719-0.438,6.953-0.438c0.906,0,1.844,0.031,2.75,0.063v-9.203h15.969v12.047 c26.391,8.188,44.641,32.734,44.641,60.469c0,7.375-1.297,14.594-3.828,21.531l-0.828,2.297l-21.156-4.313l1.359-3.219 c2.219-5.266,3.344-10.75,3.344-16.297C297.375,288.344,288.078,273.625,273.844,266.531z M152,335.953 c20.375,30.016,59.266,50.297,104,50.297c44.75,0,83.625-20.281,104-50.313v92.906c-23.453,2.344-42.281,20.25-46.156,43.219 H198.172c-3.875-22.969-22.719-40.875-46.172-43.219V335.953z"
+      />{' '}
+      <circle className="st0" cx={256} cy="157.188" r="13.75" />{' '}
+      <circle className="st0" cx={256} cy="418.938" r="13.75" />{' '}
+    </g>{' '}
+  </svg>
+);
+
+export const UserIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    viewBox="0 0 26 26"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path
+        d="M14 19.2857L15.8 21L20 17M4 21C4 17.134 7.13401 14 11 14C12.4872 14 13.8662 14.4638 15 15.2547M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+        stroke="#000000"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />{' '}
+    </g>
+  </svg>
+);
+
+export const UserActiveIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    version="1.1"
+    id="_x32_"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 24 24"
+    xmlSpace="preserve"
+    fill="currentColor"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path
+        d="M14 19.2857L15.8 21L20 17M4 21C4 17.134 7.13401 14 11 14C12.4872 14 13.8662 14.4638 15 15.2547M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+        stroke="#ff0000"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />{' '}
+    </g>
+  </svg>
+);
+
+export const PaymentIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    fill="currentColor"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path d="M0 0h48v48H0z" fill="none" />{' '}
+      <g id="Shopicon">
+        {' '}
+        <path d="M40.228,21.494L30,11.267V8c0-2.2-1.8-4-4-4H10C7.8,4,6,5.8,6,8v23.955c0,2.2,1.8,4,4,4h3.992l0.121,0.799 c0.621,4.105,4.012,7.201,7.888,7.201h20v-17C42,23.483,40.656,21.907,40.228,21.494z M26,9.185c-0.198-0.019-0.398-0.03-0.6-0.03 c-1.605,0-3.112,0.623-4.24,1.751c-1.132,1.125-1.758,2.629-1.76,4.234c-0.003,1.611,0.621,3.123,1.756,4.259L26,24.243v7.712h-7V8 h7V9.185z M10,8h3v23.955h-3V8z M38,39.955H22c-1.915,0-3.605-1.633-3.933-3.799l-0.03-0.201H26c2.2,0,4-1.8,4-4v-3.712l2.12,2.12 l2.829-2.828l-4.663-4.663L25,17.587l-1.016-1.016c-0.378-0.378-0.585-0.884-0.584-1.424c0.001-0.534,0.207-1.033,0.584-1.408 c0.423-0.423,1.024-0.6,1.604-0.548c0.455,0.04,0.897,0.217,1.228,0.548L31,17.923l6.416,6.416l-0.072-0.022l0.109,0.072 C37.584,24.586,38,25.337,38,26.955V39.955z" />{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);
+
+export const PaymentActiveIcon = ({ width = '2.6rem', height = '2.6rem', className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    version="1.1"
+    id="_x32_"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    xmlSpace="preserve"
+    fill="currentColor"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path d="M0 0h48v48H0z" fill="none" />{' '}
+      <g id="Shopicon">
+        {' '}
+        <path d="M40.228,21.494L30,11.267V8c0-2.2-1.8-4-4-4H10C7.8,4,6,5.8,6,8v23.955c0,2.2,1.8,4,4,4h3.992l0.121,0.799 c0.621,4.105,4.012,7.201,7.888,7.201h20v-17C42,23.483,40.656,21.907,40.228,21.494z M26,9.185c-0.198-0.019-0.398-0.03-0.6-0.03 c-1.605,0-3.112,0.623-4.24,1.751c-1.132,1.125-1.758,2.629-1.76,4.234c-0.003,1.611,0.621,3.123,1.756,4.259L26,24.243v7.712h-7V8 h7V9.185z M10,8h3v23.955h-3V8z M38,39.955H22c-1.915,0-3.605-1.633-3.933-3.799l-0.03-0.201H26c2.2,0,4-1.8,4-4v-3.712l2.12,2.12 l2.829-2.828l-4.663-4.663L25,17.587l-1.016-1.016c-0.378-0.378-0.585-0.884-0.584-1.424c0.001-0.534,0.207-1.033,0.584-1.408 c0.423-0.423,1.024-0.6,1.604-0.548c0.455,0.04,0.897,0.217,1.228,0.548L31,17.923l6.416,6.416l-0.072-0.022l0.109,0.072 C37.584,24.586,38,25.337,38,26.955V39.955z" />{' '}
+      </g>{' '}
+    </g>
+  </svg>
+);

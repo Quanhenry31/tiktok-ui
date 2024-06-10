@@ -1,19 +1,20 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './SuggestedAccounts.module.scss';
-import PropTypes from 'prop-types';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import AccountPreview from './AccountPreview';
+import Image from '../Image';
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
   const renderPreview = (props) => {
     return (
       <div tabIndex="-1" {...props}>
         <PopperWrapper>
-          <AccountPreview />
+          <AccountPreview data={data} />
         </PopperWrapper>
       </div>
     );
@@ -22,17 +23,13 @@ function AccountItem() {
     <div>
       <Tippy interactive delay={[800, 0]} offset={[-20, 0]} placement="bottom" render={renderPreview}>
         <div className={cx('account-item')}>
-          <img
-            className={cx('avatar')}
-            src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/f8cd0f74cc9087001bca56a5680ad61d~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1710316800&x-signature=7xs8OM0TXe962groMTiJFsW0di0%3D"
-            alt=""
-          />
+          <Image className={cx('avatar')} src={data.avatar} alt={data.nickname} />
           <div className={cx('item-info')}>
             <p className={cx('nickname')}>
-              <strong>vkimnguyen3511</strong>
-              <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
+              <strong>{data.nickname}</strong>
+              {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
             </p>
-            <p className={cx('name')}>Vkimmm</p>
+            <p className={cx('name')}>{`${data.first_name} ${data.last_name}`}</p>
           </div>
         </div>
       </Tippy>
@@ -40,6 +37,8 @@ function AccountItem() {
   );
 }
 
-AccountItem.prototype = {};
+AccountItem.prototype = {
+  data: PropTypes.object.isRequired,
+};
 
 export default AccountItem;

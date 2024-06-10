@@ -1,10 +1,14 @@
 const routes = {
-  home: '/',
-  following: '/following',
+  thongKe: '/',
+  sanPham: '/sanpham',
   profile: '/:nickname',
   upload: '/upload',
-  search: '/search',
-  live: '/live',
+  hoaDon: '/hoaDon',
+  hoaDonDetaill: '/hoaDonDetaill',
+  tongQuan: '/tongQuan',
+  payment: '/payment',
+  user: '/user',
+  invoice: '/:id/details',
 };
 
 export default routes;

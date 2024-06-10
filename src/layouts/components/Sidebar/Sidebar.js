@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
 import config from '~/config';
@@ -9,25 +11,69 @@ import {
   UserGroupActiveIcon,
   LiveIcon,
   LiveActiveIcon,
+  ProductIcon,
+  ProductActiveIcon,
+  BillIcon,
+  BillActiveIcon,
+  BillDetailIcon,
+  BillDetailActiveIcon,
+  UserIcon,
+  UserActiveIcon,
+  PaymentIcon,
+  PaymentActiveIcon,
 } from '~/components/Icons';
-import SuggestedAccounts from '~/components/SuggestedAccounts';
+
 const cx = classNames.bind(styles);
+
+const ClearStorageOnRouteChange = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== config.routes.hoaDonDetaill) {
+      localStorage.removeItem('eyeOrderId');
+    }
+    if (location.pathname !== config.routes.user) {
+      localStorage.removeItem('userOrderId');
+    }
+    if (location.pathname !== config.routes.hoaDon) {
+      localStorage.removeItem('eyeOrderDetailId');
+    }
+    if (location.pathname !== config.routes.sanPham) {
+      localStorage.removeItem('eyeProductId');
+    }
+  }, [location.pathname]);
+
+  return null; // This component doesn't render anything
+};
 
 function Sidebar() {
   return (
     <aside className={cx('wrapper')}>
+      <ClearStorageOnRouteChange />
       <Menu>
-        <MenuItem title="For You" to={config.routes.home} icon={<HomeIcon />} activeIcon={<HomeActiveIcon />} />
+        <MenuItem title="Thống kê" to={config.routes.thongKe} icon={<HomeIcon />} activeIcon={<HomeActiveIcon />} />
         <MenuItem
-          title="Following"
-          to={config.routes.following}
-          icon={<UserGroupIcon />}
-          activeIcon={<UserGroupActiveIcon />}
+          title="Sản phẩm"
+          to={config.routes.sanPham}
+          icon={<ProductIcon />}
+          activeIcon={<ProductActiveIcon />}
         />
-        <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
+        <MenuItem title="Hóa đơn" to={config.routes.hoaDon} icon={<BillIcon />} activeIcon={<BillActiveIcon />} />
+        <MenuItem
+          title="Chi tiết Hóa Đơn"
+          to={config.routes.hoaDonDetaill}
+          icon={<BillDetailIcon />}
+          activeIcon={<BillDetailActiveIcon />}
+        />
+        <MenuItem title="Khách hàng" to={config.routes.user} icon={<UserIcon />} activeIcon={<UserActiveIcon />} />
+        <MenuItem
+          title="payment"
+          to={config.routes.payment}
+          icon={<PaymentIcon />}
+          activeIcon={<PaymentActiveIcon />}
+        />
+        <MenuItem title="Tổng quan" to={config.routes.tongQuan} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
       </Menu>
-      <SuggestedAccounts label="Suggested accounts" />
-      <SuggestedAccounts label="Following accounts" />
     </aside>
   );
 }

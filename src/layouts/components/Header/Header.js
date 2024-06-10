@@ -23,7 +23,6 @@ import Menu from '~/components/Popper/Menu';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
-import Search from '../Search';
 
 const cx = classNames.bind(styles);
 
@@ -100,10 +99,9 @@ function Header() {
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <Link to={config.routes.home} className={cx('logo-link')}>
-          <img src={images.logo} alt="Tiktok" />
+          <img src={images.logo} alt="ADMIN" className={cx('img-supo')} />
+          <h2>SUBO</h2>
         </Link>
-        {/* seach */}
-        <Search />
 
         <div className={cx('actions')}>
           {currentUser ? (
